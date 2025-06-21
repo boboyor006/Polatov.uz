@@ -32,7 +32,7 @@ const Footer = () => {
               &lt;Dev/&gt;
             </div>
             <div className="text-sm text-muted-foreground flex items-center">
-              Made with <Heart className="w-4 h-4 mx-1 text-red-500" /> in Uzbekistan
+               <Heart className="w-4 h-4 mx-1 text-red-500" /> Uzbekistan
             </div>
           </motion.div>
 
@@ -74,7 +74,6 @@ const Footer = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          © {new Date().getFullYear()} Frontend Developer Portfolio. All rights reserved.
         </motion.div>
       </div>
     </footer>

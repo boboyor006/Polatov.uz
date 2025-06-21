@@ -8,6 +8,13 @@ import { Badge } from '@/components/ui/badge';
 import { ExternalLink, Github } from 'lucide-react';
 import Ekomers from "../../src/ekomers.webp"
 import Weathers from "../Weather .png"
+import Tasks from "../3912429.jpg"
+import Restoran from "../restfood-restaurant-one-page-html5-website-template_255812-original.webp"
+import Chats from "../istockphoto-1217093906-612x612.jpg"
+
+
+
+
 
 const Projects = () => {
   const { t } = useTranslation();
@@ -21,8 +28,8 @@ const Projects = () => {
       image: Ekomers,
       technologies: ['React', 'Tailwind', 'JavaScript', 'API'],
       category: 'react',
-      demoUrl: '#',
-      codeUrl: '#'
+    demoUrl: 'https://github.com/boboyor006',
+      codeUrl: 'https://github.com/boboyor006'
     },
     
     {
@@ -32,38 +39,38 @@ const Projects = () => {
       image: Weathers,
       technologies: ['React', 'API', 'Charts', 'Responsive'],
       category: 'react',
-      demoUrl: '#',
-      codeUrl: '#'
+    demoUrl: 'https://github.com/boboyor006',
+      codeUrl: 'https://github.com/boboyor006'
     },
     {
       id: 4,
       title: 'Task Management App',
       description: 'Productivity app with drag and drop functionality',
-      image: '/placeholder.svg',
+      image: Tasks,
       technologies: ['React', 'Redux', 'TypeScript', 'DnD'],
       category: 'react',
-      demoUrl: '#',
-      codeUrl: '#'
+      demoUrl: 'https://github.com/boboyor006',
+      codeUrl: 'https://github.com/boboyor006'
     },
     {
       id: 5,
       title: 'Restaurant Website',
       description: 'Beautiful restaurant landing page with animations',
-      image: '/placeholder.svg',
+      image: Restoran,
       technologies: ['HTML', 'SCSS', 'JavaScript', 'AOS'],
       category: 'design',
-      demoUrl: '#',
-      codeUrl: '#'
+      demoUrl: 'https://github.com/boboyor006',
+      codeUrl: 'https://github.com/boboyor006'
     },
     {
       id: 6,
       title: 'Chat Application',
       description: 'Real-time chat app with modern design',
-      image: '/placeholder.svg',
+      image: Chats,
       technologies: ['React', 'Socket.io', 'Node.js', 'MongoDB'],
       category: 'fullstack',
-      demoUrl: '#',
-      codeUrl: '#'
+      demoUrl: 'https://github.com/boboyor006',
+      codeUrl: 'https://github.com/boboyor006'
     }
   ];
 

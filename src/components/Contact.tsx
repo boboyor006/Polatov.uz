@@ -46,9 +46,9 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { icon: Mail, href: 'mailto:your.email@example.com', label: 'Email' },
-    { icon: Github, href: 'https://github.com/yourusername', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/yourusername', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:your.polatovt033@gmail.com', label: 'Email' },
+    { icon: Github, href: 'https://github.com/boboyor006', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/boboyor-po%CA%BBlatov-034006350/', label: 'LinkedIn' },
     { icon: MessageCircle, href: 'https://t.me/Polatov0555', label: 'Telegram' }
   ];
 
@@ -68,7 +68,6 @@ const Contact = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -153,7 +152,6 @@ const Contact = () => {
             </Card>
           </motion.div>
 
-          {/* Contact Info & Social */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -163,28 +161,26 @@ const Contact = () => {
           >
             <Card>
               <CardHeader>
-                <CardTitle className="text-2xl">Let's Connect</CardTitle>
+                <CardTitle className="text-2xl">Men Billan bog'lanish </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-6">
-                  I'm always open to discussing new opportunities and interesting projects. 
-                  Feel free to reach out if you'd like to collaborate or just have a chat!
+                Men har doim yangi imkoniyatlar va qiziqarli loyihalar haqida suhbatlashishga tayyorman.
+                Agar hamkorlik qilishni yoki shunchaki suhbat qurishni istasangiz, bemalol murojaat qiling!
                 </p>
                 
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-blue-500" />
-                    <span>your.email@example.com</span>
+                    <span>polatovt033@gmail.com</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <span className="text-lg">📍</span>
-                    <span>Tashkent, Uzbekistan</span>
+                    <span>Surxondaryo, Uzbekistan</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <MessageCircle className="w-5 h-5 text-blue-500" />
-                    <a href="https://t.me/Polatov0555" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
-                      @Polatov0555
-                    </a>
+             
+               
                   </div>
                 </div>
               </CardContent>
