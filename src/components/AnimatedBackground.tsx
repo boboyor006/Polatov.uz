@@ -5,11 +5,9 @@ import { motion } from 'framer-motion';
 const AnimatedBackground = () => {
   return (
     <div className="absolute inset-0 overflow-hidden">
-      {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-orange-900/20" />
+     <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-orange-900/20" />
       
-      {/* Floating Particles */}
-      {[...Array(50)].map((_, i) => (
+     {[...Array(50)].map((_, i) => (
         <motion.div
           key={i}
           className="absolute w-1 h-1 bg-white/30 rounded-full"
@@ -30,7 +28,6 @@ const AnimatedBackground = () => {
         />
       ))}
       
-      {/* Animated Circles */}
       {[...Array(3)].map((_, i) => (
         <motion.div
           key={`circle-${i}`}
@@ -62,7 +59,6 @@ const AnimatedBackground = () => {
         />
       ))}
       
-      {/* Animated Gradient Blobs */}
       <motion.div
         className="absolute w-96 h-96 rounded-full bg-gradient-to-r from-blue-500/30 to-purple-500/30 blur-3xl"
         animate={{

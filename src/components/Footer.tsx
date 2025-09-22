@@ -20,7 +20,6 @@ const Footer = () => {
     <footer className="bg-muted/50 border-t border-border">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-          {/* Logo & Copyright */}
           <motion.div
             className="flex items-center space-x-4"
             initial={{ opacity: 0, x: -20 }}
@@ -36,7 +35,6 @@ const Footer = () => {
             </div>
           </motion.div>
 
-          {/* Controls */}
           <motion.div
             className="flex items-center space-x-4"
             initial={{ opacity: 0, x: 20 }}
@@ -44,7 +42,6 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            {/* Language Switcher */}
             <div className="flex items-center space-x-2">
               <Globe className="w-4 h-4 text-muted-foreground" />
               {languages.map((lang) => (
@@ -60,7 +57,6 @@ const Footer = () => {
               ))}
             </div>
 
-            {/* Theme Toggle */}
             <Button variant="ghost" size="sm" onClick={toggleTheme}>
               {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </Button>

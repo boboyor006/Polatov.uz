@@ -11,10 +11,8 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Animated Background */}
       <AnimatedBackground />
 
-      {/* Content */}
       <div className="container mx-auto px-4 z-10 relative">
         <div className="text-center">
           <motion.div
@@ -67,16 +65,7 @@ const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Scroll indicator */}
-          {/* <motion.div
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          >
-            <div className="w-6 h-10 border-2 border-foreground rounded-full flex justify-center">
-              <div className="w-1 h-3 bg-foreground rounded-full mt-2"></div>
-            </div>
-          </motion.div> */}
+       
         </div>
       </div>
     </section>

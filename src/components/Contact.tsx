@@ -3,12 +3,10 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
+
 import { Mail, Github, Linkedin, MessageCircle } from 'lucide-react';
 import { toast } from 'sonner';
+import "../css/Contac.css"
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -32,7 +30,6 @@ const Contact = () => {
       return;
     }
 
-    // Simulate form submission
     console.log('Form submitted:', formData);
     toast.success(t('contact.success'));
     setFormData({ name: '', email: '', subject: '', message: '' });
@@ -67,90 +64,8 @@ const Contact = () => {
           </h2>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-2xl">Get In Touch</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">{t('contact.name')} *</Label>
-                    <Input
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className={formData.name.trim() === '' ? 'border-red-300' : ''}
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label htmlFor="email">{t('contact.email')} *</Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className={formData.email.trim() === '' ? 'border-red-300' : ''}
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label htmlFor="subject">{t('contact.subject')} *</Label>
-                    <Input
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      required
-                      className={formData.subject.trim() === '' ? 'border-red-300' : ''}
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label htmlFor="message">{t('contact.message')} *</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      rows={5}
-                      required
-                      className={formData.message.trim() === '' ? 'border-red-300' : ''}
-                    />
-                  </div>
-                  
-                  <Button 
-                    type="submit" 
-                    className={`w-full transition-all duration-300 ${
-                      isFormValid 
-                        ? 'bg-gradient-to-r from-blue-500 to-orange-500 hover:from-blue-600 hover:to-orange-600' 
-                        : 'bg-gray-400 cursor-not-allowed hover:bg-gray-400'
-                    }`}
-                    disabled={!isFormValid}
-                  >
-                    {t('contact.send')}
-                  </Button>
-                  
-                  {!isFormValid && (
-                    <p className="text-sm text-red-500 text-center">
-                      All fields marked with * are required
-                    </p>
-                  )}
-                </form>
-              </CardContent>
-            </Card>
-          </motion.div>
+        <div className="grid class_input lg:grid-cols-2 gap-12 max-w-6xl mx-auto ">
+        
 
           <motion.div
             initial={{ opacity: 0, x: 50 }}
@@ -159,7 +74,7 @@ const Contact = () => {
             viewport={{ once: true }}
             className="space-y-8"
           >
-            <Card>
+            <Card className='Cards_constac'>
               <CardHeader>
                 <CardTitle className="text-2xl">Men Billan bog'lanish </CardTitle>
               </CardHeader>

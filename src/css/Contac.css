@@ -1,0 +1,14 @@
+/* .Cards_constac{
+    margin-left: 100px;
+} */
+
+
+
+.class_input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 200px; */
+    /* border: 1px solid; */
+    
+}

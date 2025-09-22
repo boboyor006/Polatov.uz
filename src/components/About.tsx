@@ -12,8 +12,8 @@ const About = () => {
     'Next.js',
     'Node.js',
     'GraphQL',
-    'React Native',
-    'Docker'
+    'Figma ',
+    'Blog'
   ];
 
   return (
@@ -71,26 +71,25 @@ const About = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            {/* Stats Cards */}
             <div className="grid grid-cols-2 gap-4">
               <Card className="text-center">
                 <CardContent className="p-6">
                   <div className="text-3xl font-bold text-blue-500 mb-2">3+</div>
-                  <div className="text-sm text-muted-foreground">Years Experience</div>
+                  <div className="text-sm text-muted-foreground">Tajribam </div>
                 </CardContent>
               </Card>
               
               <Card className="text-center">
                 <CardContent className="p-6">
-                  <div className="text-3xl font-bold text-orange-500 mb-2">50+</div>
-                  <div className="text-sm text-muted-foreground">Projects Completed</div>
+                  <div className="text-3xl font-bold text-orange-500 mb-2">17+</div>
+                  <div className="text-sm text-muted-foreground">Loyhalarim </div>
                 </CardContent>
               </Card>
               
               <Card className="text-center">
                 <CardContent className="p-6">
-                  <div className="text-3xl font-bold text-blue-500 mb-2">20+</div>
-                  <div className="text-sm text-muted-foreground">Happy Clients</div>
+                  <div className="text-3xl font-bold text-blue-500 mb-2">32+</div>
+                  <div className="text-sm text-muted-foreground">doyimi klentlar </div>
                 </CardContent>
               </Card>
               

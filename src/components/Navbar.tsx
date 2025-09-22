@@ -45,12 +45,11 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <motion.div
             className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-orange-500 bg-clip-text text-transparent"
             whileHover={{ scale: 1.05 }}
           >
-            &lt;Dev/&gt;
+            &lt;Polatov/&gt;
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -68,9 +67,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Controls */}
           <div className="hidden md:flex items-center space-x-4">
-            {/* Language Switcher */}
             <div className="relative group">
               <Button variant="ghost" size="sm" className="flex items-center space-x-1">
                 <Globe className="w-4 h-4" />
@@ -90,13 +87,11 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* Theme Toggle */}
             <Button variant="ghost" size="sm" onClick={toggleTheme}>
               {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
           <Button
             variant="ghost"
             size="sm"
@@ -107,7 +102,6 @@ const Navbar = () => {
           </Button>
         </div>
 
-        {/* Mobile Menu */}
         {isOpen && (
           <motion.div
             className="md:hidden bg-background border-t border-border"
