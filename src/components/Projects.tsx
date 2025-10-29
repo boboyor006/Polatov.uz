@@ -98,7 +98,7 @@ const Projects = () => {
             {t('projects.title')}
           </h2>
 
-          {/* Filter Buttons */}
+      
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             {categories.map((category) => (
               <Button
